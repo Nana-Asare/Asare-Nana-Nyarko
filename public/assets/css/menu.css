@@ -4,6 +4,10 @@ Author: CoderThemes
 Email: coderthemes@gmail.com
 File: Menu
 */
+
+ul li.has_sub a{
+  color: #212121 !important;
+}
 .topbar {
   left: 0px;
   position: fixed;
@@ -40,7 +44,7 @@ File: Menu
   display: none;
 }
 .navbar-default {
-  background-color: #2196f3;
+  background-color: #212121;
   border-radius: 0;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 20px 0 rgba(0, 0, 0, 0.08);
   border: none;
@@ -198,7 +202,7 @@ body.fixed-left .side-menu.left {
   border-top: 0;
 }
 #sidebar-menu ul ul li.active a {
-  color: #435966;
+  color: #212121;
 }
 #sidebar-menu ul ul a {
   color: rgba(67, 89, 102, 0.8);
@@ -206,7 +210,7 @@ body.fixed-left .side-menu.left {
   padding: 10px 20px 10px 65px;
 }
 #sidebar-menu ul ul a:hover {
-  color: #435966 !important;
+  color: #212121 !important;
 }
 #sidebar-menu ul ul a i {
   margin-right: 5px;
@@ -218,7 +222,7 @@ body.fixed-left .side-menu.left {
   margin-top: 2px;
 }
 #sidebar-menu .subdrop {
-  color: #435966 !important;
+  color: #212121 !important;
 }
 #sidebar-menu > ul > li > a {
   color: rgba(67, 89, 102, 0.9);
@@ -228,7 +232,7 @@ body.fixed-left .side-menu.left {
   font-size: 15px;
 }
 #sidebar-menu > ul > li > a:hover {
-  color: #435966 !important;
+  color: #212121 !important;
   text-decoration: none;
 }
 #sidebar-menu > ul > li > a > span {
@@ -280,7 +284,7 @@ body.fixed-left .side-menu.left {
   margin: 3px 0 0 0;
 }
 #sidebar-menu > ul > li > a.active {
-  color: #2196f3 !important;
+  color: #212121 !important;
 }
 .menu-title {
   padding: 12px 20px !important;

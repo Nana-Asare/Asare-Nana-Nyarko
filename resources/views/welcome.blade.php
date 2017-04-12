@@ -28,14 +28,17 @@
 
                 <div class="comments">
 
-                    <ul class="list-group-item">
+                    <ul class="list-group">
+                        @foreach ($article->comments as $comment)
+
+                        <li class="list-group-item">
                         <strong>
-                            {{$comment->created_at->difforHumans()}}:
+                            {{$article->created_at->diffForHumans()}}:
                         <strong>
 
                             {{$comment->body}}
                         </li>
-                        @endfreach
+                        @endforeach
 
                     </ul>
 
@@ -46,10 +49,8 @@
                 <div class="card">
                     <div class="card-block">
 
-                        <form method="POST" action="/articles/{{$article>id }}/comment">     
+                        <form method="POST" action="/articles/{{$article->id }}/comments">     
                             {{csrf_field()  }} 
-                        
-
                             <div class="form-group">
                                 <textarea name="body" placeholder="Your comment here." class="form-control"></textarea>
                                 </div>

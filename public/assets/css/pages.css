@@ -20,6 +20,13 @@ File: Pages
 /* =============
    Form Advanced
 ============= */
+.btn-black{
+  background-color:#212121;
+  color:#FFFFFF;
+}
+.btn-black:hover{
+  color: #ffffff;
+}
 .error {
   color: #e96154;
   font-size: 12px;

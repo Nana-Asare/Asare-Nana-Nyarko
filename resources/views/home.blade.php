@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+<div cclass='col-sm-8 blog-main'>
+    <h1>{{post->tilte}}</h1>
+
+    {{$post->body}}
+
+    
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">

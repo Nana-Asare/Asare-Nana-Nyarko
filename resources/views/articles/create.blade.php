@@ -25,6 +25,7 @@
                 @endif
                 </div>
             <div class="form-group {{ $errors->has('body') ? ' has-error' : '' }}">
+            {{csrf_field()}}
 
             {!! Form::label('body','Body',null,['class'=>'control-label']) !!}
                 {!! Form::textarea('body',null,['class'=>'form-control']) !!}
@@ -34,7 +35,7 @@
                                     </span>
                 @endif
             </div>
-                {!! Form::submit('Create Article',['class'=>'btn btn-primary btn-lg btn-block']) !!}
+                {!! Form::submit('Create Article',['class'=>'btn btn-black btn-lg btn-block']) !!}
 
 
             {!! Form::close() !!}

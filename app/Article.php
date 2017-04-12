@@ -1,7 +1,6 @@
 <?php
 
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
@@ -18,4 +17,13 @@ class Article extends Model
         return $this->belongsTo(User::class);
 //        return $this->belongsTo('\App\User','id','user_id');
     }
+
+    public function comments(){
+
+    	return $this->hasMany(CommentMod::class);
+
+    }
+
+  
 }
+
